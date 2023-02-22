@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(137,132,223);
+    background: linear-gradient(45deg, rgba(137,132,223,1) 0%, rgba(95,95,205,1) 42%, rgba(0,212,255,1) 100%);
+}
+
+#title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    color: #F0F0F0;
+}
+
+#title, .players {
+    padding-bottom: 10px;
+}
+
+#players-turn {
+    padding-bottom: 15px;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#player-1, #player-2 {
+    padding-left: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F0F0F0;
+    color: #383838;
+    height: 30px;
+    width: 130px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+.players {
+    font-size: 20px;
+}
+
+.game {
+    padding-top: 15px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 430px;
+    height: 430px;
+    gap: 5px;
+    background: rgb(137,132,223);
+    background: linear-gradient(45deg, rgba(137,132,223,1) 0%, rgba(95,95,205,1) 42%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+}
+
+.game-btn {
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.x-style {
+    position: relative;
+}
+
+.x-style::before,
+.x-style::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgb(137,132,223);
+  background: linear-gradient(45deg, rgba(137,132,223,1) 0%, rgba(95,95,205,1) 42%, rgba(0,212,255,1) 100%);
+  transform: translateY(-50%) rotate(45deg);
+  border-radius: 5px;
+}
+
+.x-style::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.circle-style {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-style::after {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    background: linear-gradient(#F0F0F0, #F0F0F0) padding-box,
+                linear-gradient(45deg, rgba(137,132,223,1) 0%, rgba(95,95,205,1) 42%, rgba(0,212,255,1) 100%) border-box;
+    border-radius: 50%;
+    border: 8px solid transparent;   
+}
