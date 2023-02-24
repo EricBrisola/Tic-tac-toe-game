@@ -68,12 +68,13 @@ function checksWinner ()
        alert(oWinner + ' wins')
        resetGame ()
      }
-     else if(boardPlayerO.length + boardPlayerX.length > 8)
+  })
+
+  if(boardPlayerO.length + boardPlayerX.length > 8)
      {
        alert('Draw')
        resetGame ()
      }
-  })
 }
 
 function resetGame () 
