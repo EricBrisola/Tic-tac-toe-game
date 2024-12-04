@@ -23,7 +23,7 @@ To run this game locally on your machine:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/Tic-tac-toe-game.git
+   git clone https://github.com/EricBrisola/Tic-tac-toe-game.git
    ```
 
 2. **Navigate to the project directory**:
